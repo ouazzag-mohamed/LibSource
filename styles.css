@@ -81,3 +81,58 @@ nav img{
     background-color: #f44336;
     transition: 0.25s;
 }
+.fa-solid.fa-bars, .fa-solid.fa-xmark{
+    display: none;
+}
+@media(max-width:700px){
+    
+      .fa-solid.fa-xmark {
+        display: block ; 
+        padding: 30;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        margin: 20px;
+      }
+      .fa-solid.fa-bars{
+        display: block ;
+        color: white; 
+        padding: 30;
+        font-size: 22px;
+        cursor: pointer;
+       
+      }
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links ul li::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #ffffff;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+        width: 100%;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+   
+}
