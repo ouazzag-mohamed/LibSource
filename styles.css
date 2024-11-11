@@ -202,8 +202,14 @@ nav img{
     padding: 5px 10px;
     border-radius: 0 5px 5px 0;
     margin-right: 5px;
+    opacity: 0;
+    transition: 0.5;
 }
 
+.cours-col:hover h3 {
+    bottom: 10%;
+    opacity: 1;
+}
 .cours-col:hover {
     transform: scale(1.05); 
 }
