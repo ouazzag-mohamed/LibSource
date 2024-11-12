@@ -230,6 +230,8 @@ nav img{
     margin: auto;
     text-align: center;
     background: linear-gradient(135deg, #f5f5f5 0%, #e0f7fa 100%);
+    padding: 20px;
+    border-radius: 10px;
 
   }
   
@@ -237,6 +239,7 @@ nav img{
     font-size: 2em;
     color: #333;
     margin-bottom: 20px;
+    text-align: center;
   }
   
   .about-content {
