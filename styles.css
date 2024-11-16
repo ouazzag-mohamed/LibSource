@@ -244,6 +244,9 @@ nav img{
   .about-us h2 {
     font-size: 2em;
     color: #333;
+    margin-top: 20px;
+    padding-left: 30%;
+    padding-top: 100px;
     margin-bottom: 20px;
     text-align: 20px;
   }
@@ -253,12 +256,16 @@ nav img{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
   }
   
   .about-content img {
     width: 500px;
     border-radius: 10%;
     border: 100px 100px #333;
+  }
+  .about-content p {
+    text-align: justify;
   }
 
   .about-image::after {
