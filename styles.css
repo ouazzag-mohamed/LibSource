@@ -24,13 +24,19 @@ nav img{
 .nav-links{
     flex: 1;
     text-align: center;
+    margin-left: 20px;
 }
-.nav-links ul li{
-    list-style : none;
+.nav-links ul {
+    display: inline-block;
+    margin-left: 20px;
+}
+.nav-links ul li {
+    list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-}
+    text-align: center; 
+  }
 .nav-links ul li a{
     color : #fff;
     text-decoration: none;
@@ -226,7 +232,7 @@ nav img{
 }
 
 .about-us {
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
     background: linear-gradient(135deg, #f5f5f5 0%, #e0f7fa 100%);
@@ -239,7 +245,7 @@ nav img{
     font-size: 2em;
     color: #333;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: 20px;
   }
   
   .about-content {
@@ -270,5 +276,107 @@ nav img{
     color: #555;
     max-width: 500px;
     line-height: 1.6;
+  }
+  .contact-us {
+    margin: 100px auto;
+    width: 80%;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+        url('imgs/contactus.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    min-height: 300px;
+}
+.contact-us h1,p {
+    color: #fff;
+    
+}
+/*--------------------------------------------------*/
+/* Footer Styles */
+.footer {
+    background-color: #242525;
+    color: #e2e2e2;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-container > div {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer h3 {
+    color: #f44336;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .footer p,
+  .footer ul {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    color: #e2e2e2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer ul li a:hover {
+    color: #f44336;
+  }
+  
+  .footer-contact i {
+    margin-right: 10px;
+    color: #f44336;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #f44336;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .social-icons a {
+    color: #e2e2e2;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #f44336;
   }
   
