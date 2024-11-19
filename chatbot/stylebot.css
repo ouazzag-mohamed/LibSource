@@ -37,7 +37,7 @@ body {
   #pdf-upload label {
     display: inline-block;
     padding: 10px 25px;
-    background-color: #007bff;
+    background-color: #f44336;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -47,7 +47,7 @@ body {
   }
   
   #pdf-upload label:hover {
-    background-color: #0056b3;
+    background-color: #96312a;
   }
   
   #pdf-upload input[type="file"] {
@@ -76,7 +76,7 @@ body {
   }
   
   .user-message {
-    background-color: #dcf8c6;
+    background-color: #792d28;
     align-self: flex-end;
     text-align: right;
     margin-left: auto;
@@ -107,7 +107,7 @@ body {
   }
   
   .input-area input[type="text"]:focus {
-    border-color: #007bff;
+    border-color: #f44336;
   }
   
   .input-area button {
@@ -126,5 +126,54 @@ body {
   
   .input-area button:hover {
     background-color: #a1241b;
+  }
+  /* Chat Message Container */
+.message-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Bot and User Messages Alignment */
+  .bot-message {
+    justify-content: flex-start;
+  }
+  
+  .user-message {
+    justify-content: flex-end;
+    flex-direction: row-reverse; /* User icon on the right */
+  }
+  
+  /* Message Icon */
+  .message-icon {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  
+  .bot-message .message-icon {
+    color: #007bff; /* Blue for bot */
+  }
+  
+  .user-message .message-icon {
+    color: #f44336; /* Green for user */
+  }
+  
+  /* Chat Message */
+  .message {
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+    font-size: 14px;
+  }
+  
+  .bot-message .message {
+    background-color: #e0f7fa; /* Light blue for bot */
+    color: #333;
+  }
+  
+  .user-message .message {
+    background-color: #dcf8c6; /* Light green for user */
+    color: #333;
   }
   
