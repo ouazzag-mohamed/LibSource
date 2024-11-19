@@ -112,7 +112,7 @@ body {
   
   .input-area button {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #f44336;
     color: white;
     border: none;
     border-radius: 5px;
@@ -125,6 +125,6 @@ body {
   }
   
   .input-area button:hover {
-    background-color: #218838;
+    background-color: #a1241b;
   }
   
