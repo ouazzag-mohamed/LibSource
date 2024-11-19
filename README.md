@@ -1,7 +1,7 @@
 # LibSource
 
 
-Welcome to the LibSource a one-stop platform designed to help university students access all the resources they need to succeed! 🚀
+Welcome to the **LibSource** a one-stop platform designed to help university students access all the resources they need to succeed! 🚀
 
 ## 🌟 Features
 - 📚 **Courses, TDs, and TPs:** Access all the study materials you need, organized by subjects and semesters.
@@ -21,7 +21,7 @@ This platform was built to make learning more accessible for students at [Your U
 
 ## 🛠️ Built With
 - **Frontend:** HTML5, CSS3, JavaScript
-- **Backend (Optional):** Python, Node.js (for PDF summarization and chatbot backend)
+- **Backend :** Python, Node.js (for PDF summarization and chatbot backend)
 - **Tools:** FontAwesome for icons, responsive design for accessibility.
 
 ---
