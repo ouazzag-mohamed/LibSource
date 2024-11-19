@@ -428,3 +428,43 @@ footer ul li:hover::after{
   color: #f44336;
 }
 
+/* Chatbot Button */
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chatbot-button {
+  width: 60px;
+  height: 60px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.chatbot-button:hover {
+  transform: scale(1.1);
+}
+
+/* Chatbot Iframe */
+.chatbot-popup {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 350px;
+  height: 500px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}

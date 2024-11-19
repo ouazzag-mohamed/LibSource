@@ -78,7 +78,19 @@
       <button type="submit">Envoyer</button>
     </form>
   </section>
-
+<!-- Add this inside your <body> tag -->
+  <div class="chatbot-container">
+    <button id="chatbot-toggle" class="chatbot-button">
+      <i class="fas fa-robot"></i>
+    </button>
+    <iframe
+      src="chatbot/chatbot.html"
+      id="chatbot-frame"
+      class="chatbot-popup"
+      style="display: none;"
+    ></iframe>
+  </div>
+  <script src="script.js"></script>
     <!--show and hid menu bar-->
     <script>
       var navLinks = document.getElementById("navLinks");
