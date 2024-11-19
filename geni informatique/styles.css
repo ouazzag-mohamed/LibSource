@@ -54,14 +54,28 @@
   .nav-links ul li:hover::after{
     width: 100%;
   }
- 
-  .text-box input[type=text] {
-    padding: 6px;
-    border-radius: 20px;
+  .text-box input[type="text"] {
+    padding: 10px 16px; /* Comfortable padding */
+    width: 400px; /* Make it longer */
+    border-radius: 20px; /* Subtle curve */
+    border: 1px solid #ccc; /* Light gray border */
     margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
+    font-size: 16px; /* Clean and readable size */
+    font-family: 'Arial', sans-serif; /* Basic font */
+    color: #333; /* Dark text color */
+    outline: none; /* No default outline */
+    transition: border-color 0.2s ease; /* Smooth interaction effect */
   }
+  
+  .text-box input[type="text"]:focus {
+    border-color: #999; /* Slightly darker border on focus */
+  }
+  
+  .text-box input[type="text"]::placeholder {
+    color: #aaa; /* Light gray placeholder */
+    font-style: italic; /* Slightly styled placeholder */
+  }
+  
 
   .text-box{
     width: 90%;

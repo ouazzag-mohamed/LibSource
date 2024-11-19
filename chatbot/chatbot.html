@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="stylebot.css" />
+
+  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <body>
+    <div class="container">
+      <h1>Chatbot</h1>
+      <div id="pdf-upload">
+        <label for="pdf-file">Upload PDF</label>
+        <input type="file" id="pdf-file" accept=".pdf" />
+      </div>
+      <div class="chat-window" id="chat-window"></div>
+      <div class="input-area">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <script>
+      function sendMessage() {
+        // Add your logic here to send the message to the backend and display the response
+        // This is a placeholder; you'll need to replace this with your actual backend communication
+        const message = document.getElementById("user-input").value;
+        displayMessage(message, "user-message");
+        document.getElementById("user-input").value = "";
+        // Example of a simulated bot response (replace with your actual API call)
+        setTimeout(() => {
+          displayMessage("This is a placeholder bot response.", "bot-message");
+        }, 500);
+      }
+
+      function displayMessage(message, messageClass) {
+        const chatWindow = document.getElementById("chat-window");
+        const messageElement = document.createElement("div");
+        messageElement.classList.add("message", messageClass);
+        messageElement.textContent = message;
+        chatWindow.appendChild(messageElement);
+        chatWindow.scrollTop = chatWindow.scrollHeight;
+      }
+
+      // Add event listener for PDF upload (you'll need to handle the file upload on the backend)
+      document
+        .getElementById("pdf-file")
+        .addEventListener("change", function (event) {
+          const file = event.target.files[0];
+          console.log("Uploaded file:", file);
+          // Add your backend communication here to process the uploaded PDF
+        });
+    </script>
+  </body>
+</html>
