@@ -46,7 +46,7 @@
   <h1>Les Courses</h1>
       <p>Retrouvez ici tous les cours essentiels pour approfondir vos connaissances et réussir vos études.</p>
       <div class="grid-container">
-        <div class="cours-col"><a href="#"><img src="imgs/computer-programming-equity-students.jpeg" alt="Cours 1"><h3>Génie Informatique</h3></a></div>
+        <div class="cours-col"><a href="/geni informatique/index.html"><img src="imgs/computer-programming-equity-students.jpeg" alt="Cours 1"><h3>Génie Informatique</h3></a></div>
         <div class="cours-col"><a href="#"><img src="imgs/physique-chimie.jpeg" alt="Cours 2"><h3>TRONC COMMUN Physique Chimie</h3></a></div>
         <div class="cours-col"><a href="#"><img src="imgs/images.jpeg" alt="Cours 3"><h3>Langues Etrangères Appliquées</h3></a></div>
         <div class="cours-col"><a href="#"><img src="imgs/licence-economie-et-gestion.jpg" alt="Cours 4"><h3>Sciences Economiques et Gestion</h3></a></div>
@@ -73,8 +73,26 @@
     <p>
       Si vous avez un retour ou un problème, n'hésitez pas à nous contacter.
     </p>
+    <form class="contact-form">
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <textarea placeholder="Votre message" rows="4" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
   </section>
-
+<!-- Add this inside your <body> tag -->
+  <div class="chatbot-container">
+    <button id="chatbot-toggle" class="chatbot-button">
+      <i class="fas fa-robot"></i>
+    </button>
+    <iframe
+      src="chatbot/chatbot.html"
+      id="chatbot-frame"
+      class="chatbot-popup"
+      style="display: none;"
+    ></iframe>
+  </div>
+  <script src="script.js"></script>
     <!--show and hid menu bar-->
     <script>
       var navLinks = document.getElementById("navLinks");
