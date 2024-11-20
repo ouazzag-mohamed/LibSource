@@ -24,8 +24,10 @@
           <ul>
             <li><a href="#">HOME</a></li>
             <li><a href="#about-section">ABOUT</a></li>
+
+            <li><a href="#about-us">ABOUT US</a></li>
             <li><a href="#cours-section">COURS</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="#contact-us">CONTACT</a></li>
           </ul>
         </div>
         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -36,7 +38,7 @@
           Explorez des ressources essentielles pour vos études : cours,
           exercices, anciens examens et plus encore
         </p>
-        <a href="signup/signup.html" class="botton" target="_blank">Create account</a>
+        <a href="signup/signin.html" class="botton" target="_blank">Create account</a>
       </div>
     </section>
 
@@ -55,7 +57,7 @@
 </section>
  
 
-  <section class="about-us">
+  <section class="about-us" id = "about-us">
     <h2>About Us</h2>
     <div class="about-content" id="about-section">
       <img src="imgs/creators.jpg" alt="Creators of the website" />
@@ -66,24 +68,12 @@
       </p>
     </div>
   </section>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <section class="contact-us" id="contact-us">
+    <h1>Contact Us</h1>
+    <p>
+      Si vous avez un retour ou un problème, n'hésitez pas à nous contacter.
+    </p>
+  </section>
 
     <!--show and hid menu bar-->
     <script>
@@ -96,4 +86,46 @@
       }
     </script>
   </body>
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- About Section -->
+      <div class="footer-about">
+        <h3>About LibSource</h3>
+        <p>
+          Toutes les ressources de ce site sont gratuites à partager et à utiliser. Profitez librement des cours, exercices et examens mis à votre disposition.
+        </p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#cours-section">Courses</a></li>
+          <li><a href="#contact-us">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact Info -->
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>If you have feedback or any problem, feel free to contact us.</p>
+        <p><i class="fa-solid fa-envelope"></i> contact@libsource.com</p>
+        <p><i class="fa-solid fa-phone"></i> +212 68431649</p>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2024 LibSource. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+  
 </html>
