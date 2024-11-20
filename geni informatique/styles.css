@@ -181,7 +181,7 @@
     list-style: none;
   }
 .card-list .card-item .card-link{
-  width: 400px;
+  user-select: none;
   display: block;
   background: white;
   padding: 18px;
