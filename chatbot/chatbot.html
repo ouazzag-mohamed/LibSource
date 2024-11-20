@@ -95,10 +95,7 @@
         .addEventListener("change", (event) => {
           const file = event.target.files[0];
           if (file) {
-            displayMessage(
-              `PDF uploaded: ${file.name}. Processing...`,
-              "bot-message"
-            );
+            
           }
         });
 
@@ -112,7 +109,7 @@
             formData.append("file", file);
 
             displayMessage(
-              `PDF uploaded: ${file.name}. Processing...`,
+              `PDF uploaded: Processing...`,
               "user-message"
             );
 

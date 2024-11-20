@@ -14,15 +14,13 @@ if not os.path.exists(UPLOAD_FOLDER):
 
 def summarize_pdf(file_path):
     
-    text = ""
-    with open(file_path, "rb") as file:
-        reader = PyPDF2.PdfReader(file)
-        for page in reader.pages:
-            text += page.extract_text() + "\n"
+    
     
     genai.configure(api_key="AIzaSyDdkX66aFVl2e2bxYn_YNW3KiZg7cjnr4U")
     model = genai.GenerativeModel("gemini-1.5-flash")
-    response = model.generate_content(f"Explain {text}" )
+    sample_pdf = genai.upload_file(file_path)
+    response = model.generate_content(["Expliquez-moi en détail ce cours.", sample_pdf])
+    sample_pdf.delete()
     return response.text
     
 
