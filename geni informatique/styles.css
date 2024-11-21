@@ -257,17 +257,15 @@
     color: white;
     background: #5372f0;
   }
+.swiper-wrapper {
+  transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+.swiper-slide {
+  transition: transform 0.5s ease-in-out; /* Adds smoothness for individual slides */
+}
 
 
-
-
-
-
-
-
-
-
-  
   /*--------------------------------------------------*/
   /* Footer Styles */
   .footer {
