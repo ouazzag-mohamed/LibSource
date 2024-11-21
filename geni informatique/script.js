@@ -1,4 +1,4 @@
-new Swiper('.swiper', {
+new Swiper('.card-wrapper', {
     loop: true,
     spaceBetween: 15, // Reduced space between slides
     slidesPerView: 1, // Default for mobile
@@ -17,7 +17,6 @@ new Swiper('.swiper', {
   
     pagination: {
       el: '.swiper-pagination',
-      clickable: true,
     },
   
     navigation: {
