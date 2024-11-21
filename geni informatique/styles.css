@@ -176,7 +176,10 @@
     background: linear-gradient(#eceffe, #ced6fb);
     padding: 20px;
   }
-  
+  .title {
+    text-align: center;
+    margin-top: 10px;
+  }
   .card-wrapper {
     display: flex;
     gap: 20px;
