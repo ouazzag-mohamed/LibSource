@@ -249,12 +249,13 @@ nav img{
   max-width: 1200px;
   width: 100%;
   gap: 30px;
-  flex-wrap: wrap; /* Ensures responsive wrapping */
+  flex-wrap: wrap; 
 }
 
 .about-text {
   flex: 1;
   max-width: 600px;
+  text-align: justify;
 }
 
 .about-text h1 {
@@ -273,7 +274,7 @@ nav img{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: center; /* Centers the images vertically */
+  align-items: center; 
 }
 
 .image-container {
@@ -284,20 +285,23 @@ nav img{
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #f0f0f0;
-  flex-shrink: 0; /* Prevents images from resizing in flexbox */
+  flex-shrink: 0; 
 }
 
 .image-container:hover {
-  transform: scale(1.2); /* Pop-out effect */
+  transform: scale(1.2); 
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .about-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image fills the circle without distortion */
-  object-position: center; /* Centers the image inside the container */
+  width: 110%;
+  height: 110%;
+  object-fit: cover; 
+  object-position: center; 
 }
+
+
+
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column; /* Stack text and images vertically */
