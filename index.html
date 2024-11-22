@@ -1,73 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- responsive z3ma tafa3oli -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>LibSource</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <section class="header">
-      <nav>
-        <a href="index.html"><img src="imgs/logo.png" /></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#about-section">ABOUT</a></li>
 
-            <li><a href="#about-us">ABOUT US</a></li>
-            <li><a href="#cours-section">COURS</a></li>
-            <li><a href="#contact-us">CONTACT</a></li>
-          </ul>
-        </div>
-        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-      </nav>
-      <div class="text-box">
-        <h1>Bibliothèque Universitaire</h1>
-        <p>
-          Explorez des ressources essentielles pour vos études : cours,
-          exercices, anciens examens et plus encore
-        </p>
-        <a href="signup/signin.html" class="botton" target="_blank">Create account</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- responsive z3ma tafa3oli -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>LibSource</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="imgs/logo.png" /></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about-section">ABOUT</a></li>
+
+          <li><a href="#about-us">ABOUT US</a></li>
+          <li><a href="#cours-section">COURS</a></li>
+          <li><a href="#contact-us">CONTACT</a></li>
+        </ul>
       </div>
-    </section>
-
-<section class="cours" id="cours-section">
-  <h1>Les Courses</h1>
-      <p>Retrouvez ici tous les cours essentiels pour approfondir vos connaissances et réussir vos études.</p>
-      <div class="grid-container">
-        <div class="cours-col"><a href="/geni informatique/index.html"><img src="imgs/computer-programming-equity-students.jpeg" alt="Cours 1"><h3>Génie Informatique</h3></a></div>
-        <div class="cours-col"><a href="#"><img src="imgs/physique-chimie.jpeg" alt="Cours 2"><h3>TRONC COMMUN Physique Chimie</h3></a></div>
-        <div class="cours-col"><a href="#"><img src="imgs/images.jpeg" alt="Cours 3"><h3>Langues Etrangères Appliquées</h3></a></div>
-        <div class="cours-col"><a href="#"><img src="imgs/licence-economie-et-gestion.jpg" alt="Cours 4"><h3>Sciences Economiques et Gestion</h3></a></div>
-        <div class="cours-col"><a href="#"><img src="imgs/2-1.jpg" alt="Cours 5"><h3>Licence En Media Digital</h3></a></div>
-        <div class="cours-col"><a href="#"><img src="imgs/trois point.jpg" alt="Cours 6"><h3>autre cours</h3></a></div>
-      </div>
-    </section>
-</section>
- 
-
-  <section class="about-us" id = "about-us">
-    <h2>About Us</h2>
-    <div class="about-content" id="about-section">
-      <img src="imgs/creators.jpg" alt="Creators of the website" />
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>Bibliothèque Universitaire</h1>
       <p>
-        Nous sommes deux étudiants en Génie Informatique à la Faculté Polydisciplinaire, passionnés par le partage de connaissances et l'entraide académique.
-         Nous avons créé ce site web dans le but de centraliser tous les cours,
-         exercices et examens, afin de faciliter l'accès aux ressources essentielles pour les étudiants de notre faculté.
+        Explorez des ressources essentielles pour vos études : cours,
+        exercices, anciens examens et plus encore
       </p>
+      <a href="signup/signin.html" class="botton" target="_blank">Create account</a>
     </div>
   </section>
+
+  <section class="cours" id="cours-section">
+    <h1>Les Courses</h1>
+    <p>Retrouvez ici tous les cours essentiels pour approfondir vos connaissances et réussir vos études.</p>
+    <div class="grid-container">
+      <div class="cours-col"><a href="/geni informatique/index.html"><img
+            src="imgs/computer-programming-equity-students.jpeg" alt="Cours 1">
+          <h3>Génie Informatique</h3>
+        </a></div>
+      <div class="cours-col"><a href="#"><img src="imgs/physique-chimie.jpeg" alt="Cours 2">
+          <h3>TRONC COMMUN Physique Chimie</h3>
+        </a></div>
+      <div class="cours-col"><a href="#"><img src="imgs/images.jpeg" alt="Cours 3">
+          <h3>Langues Etrangères Appliquées</h3>
+        </a></div>
+      <div class="cours-col"><a href="#"><img src="imgs/licence-economie-et-gestion.jpg" alt="Cours 4">
+          <h3>Sciences Economiques et Gestion</h3>
+        </a></div>
+      <div class="cours-col"><a href="#"><img src="imgs/2-1.jpg" alt="Cours 5">
+          <h3>Licence En Media Digital</h3>
+        </a></div>
+      <div class="cours-col"><a href="#"><img src="imgs/trois point.jpg" alt="Cours 6">
+          <h3>autre cours</h3>
+        </a></div>
+    </div>
+  </section>
+  </section>
+
+
+  <section class="about-us" id="about-us">
+    <div class="about-container">
+      <div class="about-text">
+        <h1>À propos de nous</h1>
+        <p>
+          Nous sommes deux étudiants en Génie Informatique à la Faculté Polydisciplinaire, passionnés par le partage de
+          connaissances et l'entraide académique. Nous avons créé ce site web dans le but de centraliser tous les cours,
+          exercices et examens, afin de faciliter l'accès aux ressources essentielles pour les étudiants de notre
+          faculté.
+        </p>
+      </div>
+      <div class="about-images">
+        <div class="image-container">
+          <img src="imgs/person1.png" alt="Étudiant 1" class="about-image" />
+        </div>
+        <div class="image-container">
+          <img src="img/person2.png" alt="Étudiant 2" class="about-image" />
+        </div>
+      </div>
+    </div>
+  </section>>
+
+
+
   <section class="contact-us" id="contact-us">
     <h1>Contact Us</h1>
     <p>
@@ -80,70 +102,66 @@
       <button type="submit">Envoyer</button>
     </form>
   </section>
-<!-- Add this inside your <body> tag -->
+  <!-- Add this inside your <body> tag -->
   <div class="chatbot-container">
     <button id="chatbot-toggle" class="chatbot-button">
       <i class="fas fa-robot"></i>
     </button>
-    <iframe
-      src="chatbot/chatbot.html"
-      id="chatbot-frame"
-      class="chatbot-popup"
-      style="display: none;"
-    ></iframe>
+    <iframe src="chatbot/chatbot.html" id="chatbot-frame" class="chatbot-popup" style="display: none;"></iframe>
   </div>
   <script src="script.js"></script>
-    <!--show and hid menu bar-->
-    <script>
-      var navLinks = document.getElementById("navLinks");
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-    </script>
-  </body>
-  <footer class="footer">
-    <div class="footer-container">
-      <!-- About Section -->
-      <div class="footer-about">
-        <h3>About LibSource</h3>
-        <p>
-          Toutes les ressources de ce site sont gratuites à partager et à utiliser. Profitez librement des cours, exercices et examens mis à votre disposition.
-        </p>
-      </div>
-  
-      <!-- Quick Links -->
-      <div class="footer-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about-us">About Us</a></li>
-          <li><a href="#cours-section">Courses</a></li>
-          <li><a href="#contact-us">Contact</a></li>
-        </ul>
-      </div>
-  
-      <!-- Contact Info -->
-      <div class="footer-contact">
-        <h3>Contact Us</h3>
-        <p>If you have feedback or any problem, feel free to contact us.</p>
-        <p><i class="fa-solid fa-envelope"></i> contact@libsource.com</p>
-        <p><i class="fa-solid fa-phone"></i> +212 68431649</p>
-      </div>
+  <!--show and hid menu bar-->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+<footer class="footer">
+  <div class="footer-container">
+    <!-- About Section -->
+    <div class="footer-about">
+      <h3>About LibSource</h3>
+      <p>
+        Toutes les ressources de ce site sont gratuites à partager et à utiliser. Profitez librement des cours,
+        exercices et examens mis à votre disposition.
+      </p>
     </div>
-  
-    <div class="footer-bottom">
-      <p>&copy; 2024 LibSource. All Rights Reserved.</p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-      </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#cours-section">Courses</a></li>
+        <li><a href="#contact-us">Contact</a></li>
+      </ul>
     </div>
-  </footer>
-  
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>If you have feedback or any problem, feel free to contact us.</p>
+      <p><i class="fa-solid fa-envelope"></i> contact@libsource.com</p>
+      <p><i class="fa-solid fa-phone"></i> +212 68431649</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 LibSource. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</footer>
+
 </html>

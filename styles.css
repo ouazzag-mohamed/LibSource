@@ -233,51 +233,67 @@ nav img{
 }
 /*--------------------------------------- about us  --------------------------------------------------*/
 
+/* About Us Section */
 .about-us {
-  width: 100%;
-  text-align: center;
-  background: linear-gradient(135deg, #f5f5f5 0%, #e0f7fa 100%);
-  box-sizing: border-box;
-  padding: 20px;
-}
-
-.about-us h2 {
-  font-size: 2em;
-  color: #333;
-  margin-bottom: 20px;
-  text-align: 20px;
-}
-
-.about-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
 }
 
-.about-content img {
-  width: 500px;
-  border-radius: 10%;
-  border: 100px 100px #333;
-}
-
-.about-image::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(245, 245, 245, 1) 0%, rgba(245, 245, 245, 0) 100%);
+  gap: 30px;
 }
 
-.about-content p {
-  font-size: 1.1em;
+.about-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.2rem;
   color: #555;
-  max-width: 500px;
   line-height: 1.6;
 }
+
+.about-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container:hover {
+  transform: scale(1.2); /* Pop-out effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 /*--------------------------------------- contact us  --------------------------------------------------*/
 
 .contact-us {
