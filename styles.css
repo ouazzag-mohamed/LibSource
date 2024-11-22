@@ -249,6 +249,7 @@ nav img{
   max-width: 1200px;
   width: 100%;
   gap: 30px;
+  flex-wrap: wrap; /* Ensures responsive wrapping */
 }
 
 .about-text {
@@ -272,14 +273,18 @@ nav img{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center; /* Centers the images vertically */
 }
 
 .image-container {
+  position: relative;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f0f0f0;
+  flex-shrink: 0; /* Prevents images from resizing in flexbox */
 }
 
 .image-container:hover {
@@ -290,8 +295,18 @@ nav img{
 .about-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
+  object-fit: cover; /* Ensures the image fills the circle without distortion */
+  object-position: center; /* Centers the image inside the container */
+}
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack text and images vertically */
+    align-items: center;
+  }
+
+  .about-text {
+    text-align: center; /* Center-align text for smaller screens */
+  }
 }
 
 /*--------------------------------------- contact us  --------------------------------------------------*/
