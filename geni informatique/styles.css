@@ -176,9 +176,16 @@
     background: linear-gradient(#eceffe, #ced6fb);
     padding: 20px;
   }
-  .title {
+  .cours .title{
+    width: 100%;
     text-align: center;
-    margin-top: 10px;
+    margin-bottom: px;
+  }
+  .cours .title h1 {
+    font-size: 2rem; /* Adjust title font size */
+  color: #333; /* Set title color */
+  font-weight: bold; /* Make the title bold */
+  text-transform: uppercase;
   }
   .card-wrapper {
     display: flex;
