@@ -58,25 +58,25 @@
     width: 100%;
   }
   .text-box input[type="text"] {
-    padding: 10px 16px; /* Comfortable padding */
-    width: 400px; /* Make it longer */
-    border-radius: 20px; /* Subtle curve */
-    border: 1px solid #ccc; /* Light gray border */
+    padding: 10px 16px; 
+    width: 400px; 
+    border-radius: 20px; 
+    border: 1px solid #ccc; 
     margin-top: 8px;
-    font-size: 16px; /* Clean and readable size */
-    font-family: 'Arial', sans-serif; /* Basic font */
-    color: #333; /* Dark text color */
-    outline: none; /* No default outline */
-    transition: border-color 0.2s ease; /* Smooth interaction effect */
+    font-size: 16px; 
+    font-family: 'Arial', sans-serif; 
+    color: #333; 
+    outline: none; 
+    transition: border-color 0.2s ease; 
   }
   
   .text-box input[type="text"]:focus {
-    border-color: #999; /* Slightly darker border on focus */
+    border-color: #999; 
   }
   
   .text-box input[type="text"]::placeholder {
-    color: #aaa; /* Light gray placeholder */
-    font-style: italic; /* Slightly styled placeholder */
+    color: #aaa; 
+    font-style: italic; 
   }
   
 
@@ -172,31 +172,45 @@
   /*cours seasion
   */
   .cours {
-    position: relative; /* Allows precise positioning within the section */
+    position: relative;
     min-height: 100vh;
     background: linear-gradient(#eceffe, #ced6fb);
-    padding: 20px 20px 0; /* Ensure enough padding at the top */
+    padding: 20px 20px 0; 
   }
   
   .cours .title {
-    position: relative; /* Keep the title in the flow of the section */
-    width: 100%; /* Span the full width */
-    text-align: center; /* Center the title */
-    margin-bottom: 20px; /* Add spacing below the title */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #ffffff; 
+    padding: 10px 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto; 
+    width: fit-content; 
+    transition: 0.2s ease;
+    border: 2px solid transparent;
+  }
+  .cours .title:hover{
+    border-color: #2A73CC;
+    
+    
   }
   
   .cours .title h1 {
-    font-size: 2rem; /* Adjust title font size */
-    font-weight: bold; /* Make the title bold */
-    color: #333; /* Use a professional dark color */
-    margin: 0; /* Remove default margins */
+    font-size: 2rem; 
+    font-weight: bold; 
+    color: #333; 
+    margin: 0; 
+    text-align: center; 
   }
+  
   
   .card-wrapper {
     display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
-    gap: 20px; /* Add space between cards */
-    justify-content: center; /* Center the cards in the section */
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
   }
   
   .card-item {
@@ -261,11 +275,11 @@
     background: #5372f0;
   }
 .swiper-wrapper {
-  transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+  transition: transform 0.5s ease-in-out; 
 }
 
 .swiper-slide {
-  transition: transform 0.5s ease-in-out; /* Adds smoothness for individual slides */
+  transition: transform 0.5s ease-in-out; 
 }
 
 
