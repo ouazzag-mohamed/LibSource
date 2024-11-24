@@ -32,7 +32,6 @@ def getresponse():
     
     user=request.json
     message=user.values()
-    print(message)
     response_bot=bot_response(message)
     return jsonify({"response_bot": response_bot})
     
