@@ -11,17 +11,31 @@ CORS(app)
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
+def bot_response(user):
+    genai.configure(api_key="AIzaSyDdkX66aFVl2e2bxYn_YNW3KiZg7cjnr4U")
+    model = genai.GenerativeModel("gemini-1.5-pro")
+    response = model.generate_content(user)
+    return response.text
 
 def summarize_pdf(file_path):
     
     
     
     genai.configure(api_key="AIzaSyDdkX66aFVl2e2bxYn_YNW3KiZg7cjnr4U")
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-1.5-pro")
     sample_pdf = genai.upload_file(file_path)
-    response = model.generate_content(["Expliquez-moi en détail ce cours.", sample_pdf])
+    response = model.generate_content(["Expliquez-moi en détail ce cours.", sample_pdf])
     sample_pdf.delete()
     return response.text
+@app.route('/response',methods=['POST'])
+def getresponse():
+    
+    user=request.json
+    message=user.values()
+    print(message)
+    response_bot=bot_response(message)
+    return jsonify({"response_bot": response_bot})
+    
     
 
 @app.route('/upload_pdf', methods=['POST'])

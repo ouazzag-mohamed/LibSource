@@ -66,14 +66,33 @@
         displayMessage(message, "user-message"); // Display user message
         document.getElementById("user-input").value = ""; // Clear input
 
-        // Simulate bot response after delay
-        setTimeout(() => {
-          displayMessage(
-            "This is a placeholder bot response. Summarizing PDFs is my specialty!",
-            "bot-message"
-          );
-        }, 500);
-      }
+        const data = {
+                user: message
+                
+            };
+
+            // Send data to the backend
+            fetch('http://127.0.0.1:5000/response', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+              if (data.response_bot) {
+                  displayMessage(data.response_bot, "bot-message");
+                } else {
+                  displayMessage("Error summarizing PDF.", "bot-message");
+                }
+              })
+            .catch((error) => {
+                console.error('Error:', error);
+                // Handle error (e.g., display an error message to the user)
+            });
+        }
+      
 
       // Function to show bot introduction when the page loads
       function showBotIntroduction() {
@@ -95,7 +114,7 @@
         .addEventListener("change", (event) => {
           const file = event.target.files[0];
           if (file) {
-            
+
           }
         });
 
