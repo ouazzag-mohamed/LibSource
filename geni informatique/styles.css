@@ -169,27 +169,24 @@
   /*cours seasion
   */
   .cours {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative; /* Allows precise positioning within the section */
     min-height: 100vh;
     background: linear-gradient(#eceffe, #ced6fb);
-    padding: 20px;
+    padding: 20px 20px 0; /* Ensure enough padding at the top */
   }
-  .cours .title{
-    width: 100%;
-    text-align: center;
-    margin-bottom: px;
-  }
+
   .cours .title h1 {
     font-size: 2rem; /* Adjust title font size */
-  color: #333; /* Set title color */
-  font-weight: bold; /* Make the title bold */
-  text-transform: uppercase;
+    font-weight: bold; /* Make the title bold */
+    color: #333; /* Use a professional dark color */
+    margin: 0; /* Remove default margins */
   }
+  
   .card-wrapper {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    gap: 20px; /* Add space between cards */
+    justify-content: center; /* Center the cards in the section */
   }
   
   .card-item {
@@ -253,17 +250,15 @@
     color: white;
     background: #5372f0;
   }
-  
+.swiper-wrapper {
+  transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+.swiper-slide {
+  transition: transform 0.5s ease-in-out; /* Adds smoothness for individual slides */
+}
 
 
-
-
-
-
-
-
-
-  
   /*--------------------------------------------------*/
   /* Footer Styles */
   .footer {
