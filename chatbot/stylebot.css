@@ -1,6 +1,6 @@
 /* Overall Page Style */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins',sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,6 +114,59 @@ h1 {
   opacity: 0;
   animation: fadeIn 0.5s forwards;
 }
+.message-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+
+}
+
+.user-message {
+  justify-content: flex-end; /* Align user messages to the right */
+}
+
+.message-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+  border-radius: 12px;
+}
+
+.message-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f44336; /* Default color for user */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+}
+
+.bot-message .message-icon {
+  background-color: #00bcd4; /* Bot-specific color */
+}
+
+.message {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 14px;
+  max-width: 70%;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+.user-message .message {
+  background-color: #792d28;
+  color: white;
+}
+
+.bot-message .message {
+  background-color: #e0f7fa;
+}
+
 
 @keyframes fadeIn {
   to {
