@@ -21,4 +21,17 @@ new Swiper('.card-wrapper', {
     speed:1000,
     
   });
+
+  document.getElementById("semester-select").addEventListener("change", function () {
+    const selectedValue = this.value;
+  
+    // Hide all semester sections
+    document.querySelectorAll(".semester").forEach(section => {
+      section.classList.remove("active");
+    });
+  
+    // Show the selected semester section
+    document.getElementById(selectedValue).classList.add("active");
+  });
+  
   
