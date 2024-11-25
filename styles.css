@@ -3,6 +3,9 @@
   padding: 0;
   font-family: 'Poppins',sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 .header{
   min-height: 100vh;
   width: 100%;
@@ -233,51 +236,86 @@ nav img{
 }
 /*--------------------------------------- about us  --------------------------------------------------*/
 
+/* About Us Section */
 .about-us {
-  width: 100%;
-  text-align: center;
-  background: linear-gradient(135deg, #f5f5f5 0%, #e0f7fa 100%);
-  box-sizing: border-box;
-  padding: 20px;
-}
-
-.about-us h2 {
-  font-size: 2em;
-  color: #333;
-  margin-bottom: 20px;
-  text-align: 20px;
-}
-
-.about-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  padding: 50px 20px;
+  background-color: #242525;
 }
 
-.about-content img {
-  width: 500px;
-  border-radius: 10%;
-  border: 100px 100px #333;
-}
-
-.about-image::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(245, 245, 245, 1) 0%, rgba(245, 245, 245, 0) 100%);
+  gap: 30px;
+  flex-wrap: wrap; 
 }
 
-.about-content p {
-  font-size: 1.1em;
-  color: #555;
-  max-width: 500px;
+.about-text {
+  flex: 1;
+  max-width: 600px;
+  text-align: justify;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  color: #f44336;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: #ffffff;
   line-height: 1.6;
 }
+
+.about-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; 
+}
+
+.image-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f0f0f0;
+  flex-shrink: 0; 
+}
+
+.image-container:hover {
+  transform: scale(1.2); 
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.815);
+}
+
+.about-image {
+  width: 110%;
+  height: 110%;
+  object-fit: cover; 
+  object-position: center; 
+}
+
+
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack text and images vertically */
+    align-items: center;
+  }
+
+  .about-text {
+    text-align: center; /* Center-align text for smaller screens */
+  }
+}
+
 /*--------------------------------------- contact us  --------------------------------------------------*/
 
 .contact-us {
@@ -292,11 +330,21 @@ nav img{
   text-align: center;
   padding: 100px 20px;
   min-height: 400px;
-}
-.contact-us h1,p {
-  color: #fff;
-  margin-bottom: 20px;
   
+}
+.contact-us h1 {
+  color: #fff;
+  font-size: 2.5rem; /* Larger font for emphasis */
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase; /* Adds a professional touch */
+}
+
+.contact-us p {
+  color: #ddd;
+  margin-bottom: 30px;
+  font-size: 1.2rem; /* Improved readability */
+  line-height: 1.6; /* Balanced text spacing */
 }
 .contact-form{
   display: flex;
