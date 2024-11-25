@@ -1,4 +1,3 @@
-/* Overall Page Style */
 body {
   font-family: 'Poppins', sans-serif;
   display: flex;
@@ -62,35 +61,33 @@ h1 {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Message Container Styling */
 .message-container {
   display: flex;
   align-items: flex-start;
   margin-bottom: 15px;
 }
 
-/* Bot Message Layout (icon on the left) */
 .bot-message {
   justify-content: flex-start;
 }
 
 .bot-message .message-icon {
-  background-color: #00bcd4; /* Bot-specific color */
+  background-color: #00bcd4;
   color: white;
   font-size: 18px;
   width: 40px;
   height: 40px;
-  border-radius: 50%; /* Make icon circular */
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10px; /* Space between icon and text */
-  flex-shrink: 0; /* Prevent shrinking */
+  margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .bot-message .message {
   background-color: #e0f7fa;
-  border-radius: 15px 15px 15px 0; /* Top-left corner is square */
+  border-radius: 15px 15px 15px 0;
   padding: 12px 15px;
   max-width: 70%;
   font-size: 14px;
@@ -99,28 +96,27 @@ h1 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* User Message Layout (icon on the right) */
 .user-message {
-  justify-content: flex-end; /* Align to the right */
+  justify-content: flex-end;
 }
 
 .user-message .message-icon {
-  background-color: #f44336; /* User-specific color */
+  background-color: #f44336;
   color: white;
   font-size: 18px;
   width: 40px;
   height: 40px;
-  border-radius: 50%; /* Make icon circular */
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 10px; /* Space between text and icon */
-  flex-shrink: 0; /* Prevent shrinking */
+  margin-left: 10px;
+  flex-shrink: 0;
 }
 
 .user-message .message {
   background-color: #792d28;
-  border-radius: 15px 15px 0 15px; /* Top-right corner is square */
+  border-radius: 15px 15px 0 15px;
   padding: 12px 15px;
   max-width: 70%;
   font-size: 14px;
@@ -129,14 +125,12 @@ h1 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Adjust spacing between icon and message */
 .message-wrapper {
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between icon and text */
+  gap: 10px;
 }
 
-/* Animation for new messages */
 .message {
   opacity: 0;
   animation: fadeIn 0.5s forwards;
@@ -148,7 +142,6 @@ h1 {
   }
 }
 
-/* Input area */
 .input-area {
   display: flex;
   align-items: center;
