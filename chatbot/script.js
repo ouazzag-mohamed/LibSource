@@ -114,11 +114,11 @@ function displayMessage(message, messageClass) {
         });
     }
   });
-// Add event listener for the "Enter" key in the input field
+
 document.getElementById("user-input").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
-      sendMessage(); // Trigger the sendMessage function when Enter is pressed
-      event.preventDefault(); // Prevent the default form submission behavior
+      sendMessage(); 
+      event.preventDefault(); 
     }
   });
     
