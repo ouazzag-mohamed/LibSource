@@ -1,9 +1,13 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
+from dotenv import load_dotenv
 import PyPDF2
 import requests
 import google.generativeai as genai
+
+load_dotenv()
+
 app = Flask(__name__)
 CORS(app)  
 
@@ -12,7 +16,7 @@ UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 def bot_response(user):
-    genai.configure(api_key="AIzaSyDdkX66aFVl2e2bxYn_YNW3KiZg7cjnr4U")
+    genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
     model = genai.GenerativeModel("gemini-1.5-pro")
     response = model.generate_content(user)
     return response.text
@@ -20,8 +24,7 @@ def bot_response(user):
 def summarize_pdf(file_path):
     
     
-    
-    genai.configure(api_key="AIzaSyDdkX66aFVl2e2bxYn_YNW3KiZg7cjnr4U")
+    genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
     model = genai.GenerativeModel("gemini-1.5-pro")
     sample_pdf = genai.upload_file(file_path)
     response = model.generate_content(["Expliquez-moi en détail ce cours.", sample_pdf])
