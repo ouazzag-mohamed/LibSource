@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Chatbot</title>
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="stylebot.css" />
     <link
       rel="stylesheet"
@@ -18,15 +19,31 @@
         <label for="pdf-file"><i class="fas fa-upload"></i> Upload PDF</label>
         <input type="file" id="pdf-file" accept=".pdf" />
       </div>
-      <div class="chat-window" id="chat-window"></div>
-      <div class="input-area">
-        <input type="text" id="user-input" placeholder="Type your message..." />
-        <button onclick="sendMessage()">
+      <div class="chat-window" id="chat-window">
+        <!-- Messages will be added here dynamically -->
+        <!-- Typing indicator will appear here when needed -->
+      </div>
+      
+      <!-- Loading dots animation -->
+      <div id="loading-dots" class="loading-dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+
+      <div class="chat-input-container">
+        <input 
+          type="text" 
+          id="user-input" 
+          class="chat-input"
+          placeholder="Type your message..." 
+        />
+        <button class="send-button" onclick="sendMessage()">
           <i class="fas fa-paper-plane"></i> Send
         </button>
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="scriptbot.js"></script>
   </body>
 </html>
