@@ -30,22 +30,22 @@ function displayMessage(message, messageClass, isLoading = false) {
     chatWindow.scrollTop = chatWindow.scrollHeight;
 }
   
-// Function to handle user input and bot response
+
 function sendMessage() {
     const message = document.getElementById("user-input").value;
-    if (message.trim() === "") return; // Prevent empty messages
+    if (message.trim() === "") return; 
   
-    displayMessage(message, "user-message"); // Display user message
-    document.getElementById("user-input").value = ""; // Clear input
+    displayMessage(message, "user-message"); 
+    document.getElementById("user-input").value = ""; 
     
-    // Show loading message with dots
+    // loading
     displayMessage("", "bot-message", true);
   
     const data = {
       user: message,
     };
   
-    // Send data to the backend
+    // fetch to backend
     fetch("http://127.0.0.1:5000/response", {
       method: "POST",
       headers: {
@@ -55,7 +55,7 @@ function sendMessage() {
     })
       .then((response) => response.json())
       .then((data) => {
-        // Remove loading message
+        // Remove loading 
         const loadingMessage = document.getElementById("loading-message");
         if (loadingMessage) {
             loadingMessage.remove();
@@ -68,7 +68,7 @@ function sendMessage() {
         }
       })
       .catch((error) => {
-        // Remove loading message
+        
         const loadingMessage = document.getElementById("loading-message");
         if (loadingMessage) {
             loadingMessage.remove();
@@ -80,12 +80,11 @@ function sendMessage() {
 }
   
   
-// Trigger bot introduction on page load
 window.addEventListener("DOMContentLoaded", () => {
     showBotIntroduction();
 });
 
-// Add event listener for Enter key press
+// add enter
 document.getElementById("user-input").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         event.preventDefault();
@@ -93,7 +92,7 @@ document.getElementById("user-input").addEventListener("keypress", function(even
     }
 });
 
-// Handle PDF file upload
+// PDF
 document.getElementById("pdf-file").addEventListener("change", (event) => {
     const file = event.target.files[0];
     if (file) {
@@ -101,8 +100,6 @@ document.getElementById("pdf-file").addEventListener("change", (event) => {
       formData.append("file", file);
   
       displayMessage(`PDF uploaded: Processing...`, "user-message");
-  
-      // Send the file to the backend
       fetch("http://localhost:5000/upload_pdf", {
         method: "POST",
         body: formData,
